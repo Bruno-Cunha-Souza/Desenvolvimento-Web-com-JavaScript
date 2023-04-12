@@ -6,20 +6,18 @@ function playSong(idElementSong){
 // referencia constante 
 const KeyList = document.querySelectorAll('.tecla');
 // referencia variavel
-let accountant = 0;
 
-while(accountant < KeyList.length ){
+
+for(let accountant = 0; accountant < KeyList.length; accountant++){
 
     const key = KeyList[accountant];
     const instrument = key.classList[1];
-
-    const idAudio = `#som_${instrument}`;
-    //console.log(idAudio);
-
+    const idAudio = `#som_${instrument}`; //template string
+    
     KeyList[accountant].onclick = function(){
         playSong(idAudio);
     }
 
-    accountant = accountant + 1;
+    //console.log(idAudio);
     //console.log(accountant);
 }
