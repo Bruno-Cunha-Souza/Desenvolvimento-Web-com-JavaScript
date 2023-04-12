@@ -1,3 +1,6 @@
+/*
+    Implementação da reprodução dos Sons
+*/
 function playSong(idElementSong){
 
     document.querySelector(idElementSong).play();
@@ -18,3 +21,7 @@ for(let accountant = 0; accountant < KeyList.length; accountant++){
     //console.log(idAudio);
     //console.log(accountant);
 }
+
+/*
+    Eventos de Teclado
+*/
